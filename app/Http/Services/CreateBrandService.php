@@ -16,4 +16,6 @@ class CreateBrandService {
         
         return Brand::create($data);
     }
+
+
 }
