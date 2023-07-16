@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Services;
+namespace App\Http\Services\BrandsServices;
 
 use App\Exceptions\AppError;
 use App\Models\Brand;

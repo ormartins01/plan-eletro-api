@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\{CreateProductRequest};
-use App\Http\Services\CreateProductService;
-use App\Models\Product;
+use App\Http\Requests\{CreateProductRequest, RetrieveProductRequest};
+use App\Http\Services\ProductsServices\CreateProductService;
+use App\Http\Services\ProductsServices\RetrieveAllProductsService;
+use App\Http\Services\ProductsServices\RetrieveProductService;
 
 class ProductController extends Controller {
     public function create(CreateProductRequest $request) {
@@ -13,10 +14,15 @@ class ProductController extends Controller {
         return $productCreated->execute($request->all());
     }
 
-    public function retrieveAll() {
-        // $allProducts = new RetrieveAllProducts();
+    public function retrieveAll(RetrieveProductRequest $request) {
+        $allProducts = new RetrieveAllProductsService();
 
-        // return $allProducts;
+        return $allProducts->execute();
+    }
 
+    public function retrieveProduct($id) {
+        $allProducts = new RetrieveProductService();
+
+        return $allProducts->execute($id);
     }
 }
