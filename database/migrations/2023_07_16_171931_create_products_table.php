@@ -6,9 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::create('products', function (Blueprint $table) {
@@ -20,6 +17,8 @@ return new class extends Migration
             $table->timestamps();
 
             $table->primary('id');
+
+            $table->foreign('brand_id')->references('id')->on('brands');
         });
     }
 

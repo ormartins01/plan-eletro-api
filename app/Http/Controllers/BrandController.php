@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\{CreateProductRequest};
-use App\Http\Services\CreateProductService;
+use App\Http\Requests\{CreateBrandRequest};
+use App\Http\Services\CreateBrandService;
 
-class ProductController extends Controller {
-    public function create(CreateProductRequest $request) {
-        $productCreated = new CreateProductService();
+class BrandController extends Controller {
+    public function create(CreateBrandRequest $request) {
+        $brandCreated = new CreateBrandService();
 
-        return $productCreated->execute($request->all());
+        return $brandCreated->execute($request->all());
     }
 
 
