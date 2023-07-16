@@ -23,7 +23,7 @@ These were the main technologies used in this project:
 - [Docker](https://hub.docker.com/_/docker-docs)
 - [MySQL](https://www.mysql.com/)
 
-**Base URL: https://cine-express-projeto-m4.herokuapp.com**
+**Base URL: COLOCAR link de deploy**
 
 ### **Author**
 
