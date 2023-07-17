@@ -11,6 +11,7 @@
 - [**1.** **BRANDS**](#1-brands)
 - [**2.** **PRODUCTS**](#2-products)
   - [**Requests for Brands**:](#requests-for-brands)
+  - [**Requests for Products**:](#requests-for-products)
 
 <br>
 
@@ -28,7 +29,7 @@ These were the main technologies used in this project:
 - [Docker](https://hub.docker.com/_/docker-docs)
 - [MySQL](https://www.mysql.com/)
 
-**Base URL: COLOCAR link de deploy**
+**Base URL: https://plan-eletro-api.onrender.com**
 
 ### **Author**
 
@@ -97,8 +98,22 @@ The Products object is defined as:
 - GET /api/brands/id
 - PUT /api/brands/id
 - DELETE /api/brands/id
-- Host: https://cine-express-projeto-m4.herokuapp.com
+- Host: https://plan-eletro-api.onrender.com
 - Authorization: None
 - Content-type: application/json
 
 <br>
+
+### **Requests for Products**:
+
+- POST /api/products
+- GET /api/products
+- GET /api/products/id
+- PUT /api/products/id
+- DELETE /api/products/id
+- Host: https://plan-eletro-api.onrender.com
+- Authorization: None
+- Content-type: application/json
+
+<br>
+

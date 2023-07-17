@@ -16,8 +16,6 @@ return new class extends Migration
             $table->string('brand_id');
             $table->timestamps();
 
-            $table->primary('id');
-
             $table->foreign('brand_id')->references('id')->on('brands');
         });
     }
