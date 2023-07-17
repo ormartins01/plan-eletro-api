@@ -17,7 +17,7 @@ class CreateProductRequest extends FormRequest
             'name' => 'required',
             'description' => 'required|min:10',
             'tension' => 'required|numeric|min:1|max:380',
-            'brand_id' => 'required'
+            'brand' => 'required'
         ];
     }
 }

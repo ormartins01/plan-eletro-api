@@ -5,12 +5,10 @@
 - [**Content Table**](#content-table)
 - [**1. Overview**](#1-overview)
   - [**Author**](#author)
-- [**2. Entity Relationship Diagram**](#2-entity-relationship-diagram)
+- [\*\*1. Entity \*\*](#1-entity-)
 - [**3. Endpoints**](#3-endpoints)
   - [Index](#index)
-- [**1.** **BRANDS**](#1-brands)
-- [**2.** **PRODUCTS**](#2-products)
-  - [**Requests for Brands**:](#requests-for-brands)
+- [**1.** **PRODUCTS**](#1-products)
   - [**Requests for Products**:](#requests-for-products)
 
 <br>
@@ -37,7 +35,7 @@ These were the main technologies used in this project:
 
 <br>
 
-## **2. Entity Relationship Diagram**
+## **1. Entity **
 
 [ Back to the top ](#content-table)
 
@@ -51,29 +49,11 @@ These were the main technologies used in this project:
 
 ### Index
 
-- [Brands](#1-brands)
-- [Products](#2-products)
+- [Products](#1-products)
 
 <br>
 
-## **1.** **BRANDS**
-
-[Back to Endpoints](#3-endpoints)
-
-<br>
-
-The User object is defined as:
-
-| Field      | Type     | Description                                       |
-| ---------- | -------- | ------------------------------------------------- |
-| id         | string   | Brand's unique identifier                         |
-| brand_name | string   | Brand name \*                                     |
-| updated_at | date     | Last modified date  \*                            |
-| created_at | date     | Creation date                                     |
-
-<br>
-
-## **2.** **PRODUCTS**
+## **1.** **PRODUCTS**
 
 [Back to Endpoints](#3-endpoints)
 
@@ -86,21 +66,8 @@ The Products object is defined as:
 | id          | string   | Product's unique identifier                       |
 | name        | string   | Brand name \*                                     |
 | description | string   | Last modified date  \*                            |
-| tension     | integer  | Creation date                                     |
-| brand_id    | string   | Creation date                                     |
-
-<br>
-
-### **Requests for Brands**:
-
-- POST /api/brands
-- GET /api/brands
-- GET /api/brands/id
-- PUT /api/brands/id
-- DELETE /api/brands/id
-- Host: https://plan-eletro-api.onrender.com
-- Authorization: None
-- Content-type: application/json
+| tension     | integer  | Tension volts                                     |
+| brand       | string   | brand of product                                  |
 
 <br>
 
@@ -116,4 +83,3 @@ The Products object is defined as:
 - Content-type: application/json
 
 <br>
-

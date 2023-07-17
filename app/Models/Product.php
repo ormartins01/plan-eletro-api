@@ -20,7 +20,7 @@ class Product extends Authenticatable
         'name',
         'description',
         'tension',
-        'brand_id'
+        'brand'
     ];
 
 }
