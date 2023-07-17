@@ -4,9 +4,8 @@ namespace App\Http\Services\BrandsServices;
 
 use App\Exceptions\AppError;
 use App\Models\Brand;
-use App\Models\Product;
 
-class CreateBrandService {
+class CreateBrandsService {
     public function execute(array $data) {
         $brand = Brand::firstWhere('brand_name', $data['brand_name']);
 
