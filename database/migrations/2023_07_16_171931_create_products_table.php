@@ -13,10 +13,10 @@ return new class extends Migration
             $table->string('name');
             $table->string('description');
             $table->integer('tension');
-            $table->uuid('brand_id');
+            $table->string('brand');
             $table->timestamps();
 
-            $table->foreign('brand_id')->references('id')->on('brands');
+            // $table->foreign('brand_id')->references('id')->on('brands');
         });
     }
 
